@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Android Home Screen</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Screen */
+.screen {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("1000112560.png");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    color: white;
+}
+
+/* Time */
+.time {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-shadow: 0 1px 4px black;
+}
+
+/* App Grid */
+.apps {
+    position: absolute;
+
+    top: 105px;
+    left: 25px;
+    right: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 55px 15px;
+}
+
+/* App */
+.app {
+    text-align: center;
+    font-size: 17px;
+
+    text-shadow: 0 1px 4px black;
+}
+
+/* Icon */
+.icon {
+    width: 72px;
+    height: 72px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #333;
+
+    font-size: 35px;
+
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+}
+
+.name {
+    margin-top: 8px;
+}
+
+/* Clock */
+.clock {
+    background: #111;
+    color: white;
+}
+
+/* Folder */
+.folder {
+    font-size: 22px;
+}
+
+/* Bottom Apps */
+.bottom {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 105px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation */
+.navigation {
+    position: absolute;
+
+    bottom: 15px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 28px;
+
+    color: #ddd;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="screen">
+
+    <!-- Time -->
+    <div class="time">
+        7:20 am
+    </div>
+
+
+    <!-- Apps -->
+    <div class="apps">
+
+        <div class="app">
+            <div class="icon">📁</div>
+            <div class="name">Files</div>
+        </div>
+
+        <div class="app">
+            <div class="icon">⚙️</div>
+            <div class="name">Settings</div>
+        </div>
+
+        <div class="app">
+            <div class="icon folder">
+                ● ●<br>
+                ● ●
+            </div>
+            <div class="name">Tools</div>
+        </div>
+
+        <div class="app">
+            <div class="icon clock">
+                ─<br>⌁
+            </div>
+            <div class="name">Clock</div>
+        </div>
+
+        <div class="app">
+            <div class="icon folder">
+                ▦
+            </div>
+            <div class="name">Apps</div>
+        </div>
+
+
+        <div class="app">
+            <div class="icon folder">
+                ● ●<br>
+                × ▦
+            </div>
+            <div class="name">Games</div>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Icons -->
+    <div class="bottom">
+
+        <div class="icon">
+            📞
+        </div>
+
+        <div class="icon">
+            💬
+        </div>
+
+        <div class="icon">
+            ◯
+        </div>
+
+        <div class="icon">
+            🌈
+        </div>
+
+        <div class="icon">
+            ●
+        </div>
+
+    </div>
+
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+
+        <span>◁</span>
+        <span>□</span>
+        <span>☰</span>
+
+    </div>
+
+</div>
+
+</body>
+</html>
